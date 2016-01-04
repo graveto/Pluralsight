@@ -7,7 +7,17 @@
         port = process.env.port || 5000,
         bookRouter = express.Router(),
         books = [{
-            name: 'Something'
+            title: 'Something',
+            author: 'Someone',
+            read: false
+        }, {
+            title: 'Something2',
+            author: 'Someone2',
+            read: false
+        }, {
+            title: 'Something3',
+            author: 'Someone3',
+            read: false
         }];
 
     app.use(express.static('public'));
